@@ -34,4 +34,3 @@ Se abrirá el navegador en [http://localhost:3000](http://localhost:3000) y podr
 * react-router-dom: 6.10.0 
 * react-scripts: 5.0.1
 * web-vitals: 2.1.4
-* sass: 1.61.0
