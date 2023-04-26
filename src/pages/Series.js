@@ -2,7 +2,7 @@
   import data from '../data/sample.json'
 
 const Series = () => {
-    
+      
       const [series, setSeries] = useState("");
   
       const soloSeries = () => {
@@ -13,28 +13,43 @@ const Series = () => {
           setSeries(soloBuscaSerie)
       }
   
+
+          const datos = data.entries
+          const url = datos.map((element) => element.images["Poster Art"])
+  
+          console.log(url);
   
     return (
-      <div className='series'>
-  <h1>Series</h1>
-      <button onClick={soloSeries} value="Ver las series">Ver las series</button>
-  
       <div>
+  
+      <button onClick={soloSeries} value="Sólo series">Ver solo las series</button>
+  
+      <div >
           {series.length > 0 ? series.map((serie) => (
   
               <div key={serie.title}>
   
-                  <p>{serie.title}</p>
+                  <p>{url.title}</p>
+                  
+              </div>
+  
+          )) : ""}
+      </div>
+      <div>
+          {series.length > 0 ? url.map((url) => (
+  
+              <div key={url.title}>
+  
+                  <img src={url.url} alt="" />
                   
               </div>
   
           )) : ""}
       </div>
   
-  
   </div>
     )
-  };
+  }
 
 
 export default Series;

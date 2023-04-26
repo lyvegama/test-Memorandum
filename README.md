@@ -34,3 +34,16 @@ Se abrirá el navegador en [http://localhost:3000](http://localhost:3000) y podr
 * react-router-dom: 6.10.0 
 * react-scripts: 5.0.1
 * web-vitals: 2.1.4
+* bootstrap: 5.3.0-alpha3
+* mdb-ui-kit: 6.2.0
+
+## Detalles:
+3 páginas con React:
+
+- Una página de "Inicio"
+- Una página de "Series"
+- Una página "Películas"
+
+
+### Conclusiones:
+Espero poder enviar una versión mejorada con un poco más de tiempo. Me han faltado muchas funcionalidades y hacer el diseño. Gracias por la oportunidad. Enviaré una segunda versión mejorada.

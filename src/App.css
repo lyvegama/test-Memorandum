@@ -1,7 +1,12 @@
 body {
   margin: 0;
-  background-color: aqua;
 }
+
+.series img{
+  width: 50px;
+}
+
+
 
 .footer {
   position: fixed;
